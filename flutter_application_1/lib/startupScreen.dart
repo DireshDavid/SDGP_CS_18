@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_application_1/secondpage.dart';
 
 class StartupScreen extends StatefulWidget {
   @override
@@ -19,14 +20,15 @@ class _StartupScreenState extends State<StartupScreen> {
                     height: double.infinity,
                     width: double.infinity,
                     decoration: BoxDecoration(
+                        //color: Color.fromARGB(255, 0, 33, 95),
                         gradient: LinearGradient(
                             begin: Alignment.topCenter,
                             end: Alignment.bottomCenter,
                             colors: [
-                          Color(0x665ac18e),
-                          Color(0x995ac18e),
-                          Color(0xcc5ac18e),
-                          Color(0xff5ac18e),
+                          Color.fromARGB(248, 76, 135, 252),
+                          Color.fromARGB(251, 1, 95, 203),
+                          Color.fromARGB(252, 1, 71, 183),
+                          Color.fromARGB(255, 0, 38, 77),
                         ])),
                     child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -37,20 +39,18 @@ class _StartupScreenState extends State<StartupScreen> {
                             width: 100,
                             alignment: FractionalOffset.topCenter,
                           ),
-                          Text(
-                            'Drow-zy',
-                            style: TextStyle(
-                                color: Color.fromARGB(255, 13, 130, 0),
-                                fontSize: 40,
-                                fontWeight: FontWeight.bold),
-                          ),
+                          Text('Drow-zy',
+                              style: TextStyle(
+                                  color: Color.fromARGB(255, 250, 218, 154),
+                                  fontSize: 50,
+                                  fontWeight: FontWeight.w500)),
                           SizedBox(height: 50),
                           Text(
                             'SAFETY FOR ALL',
                             style: TextStyle(
-                                color: Colors.black,
+                                color: Color.fromARGB(255, 255, 255, 255),
                                 fontSize: 20,
-                                fontWeight: FontWeight.bold),
+                                fontWeight: FontWeight.w400),
                           ),
                           SizedBox(height: 150),
                           Container(
@@ -59,7 +59,7 @@ class _StartupScreenState extends State<StartupScreen> {
                             //color: Colors.black,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(30),
-                              color: Color.fromARGB(255, 223, 194, 194),
+                              color: Color.fromARGB(255, 245, 241, 218),
                             ),
                             child: Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
@@ -71,7 +71,7 @@ class _StartupScreenState extends State<StartupScreen> {
                                         fontSize: 20,
                                         //fontWeight: FontWeight.bold,
                                         fontStyle: FontStyle.italic),
-                                    maxLines: 4,
+                                    maxLines: 5,
                                     textAlign: TextAlign.center,
                                     overflow: TextOverflow.visible,
                                   ),
@@ -82,8 +82,14 @@ class _StartupScreenState extends State<StartupScreen> {
                                         fixedSize: Size(250, 70),
                                         shape: RoundedRectangleBorder(
                                             borderRadius:
-                                                BorderRadius.circular(20))),
-                                    onPressed: () {},
+                                                BorderRadius.circular(25))),
+                                    onPressed: () {
+                                      Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) =>
+                                                  SecondPage()));
+                                    },
                                     child: Text('GET STARTED',
                                         style: TextStyle(
                                             color: Colors.white,
