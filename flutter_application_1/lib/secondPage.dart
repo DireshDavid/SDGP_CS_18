@@ -33,12 +33,12 @@ class _SecondPageState extends State<SecondPage> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
                           Image(
-                            image: AssetImage('Assests/images.jpg'),
-                            height: 170,
-                            width: 100,
+                            image: AssetImage('Assests/logo.png'),
+                            height: 200,
+                            width: 200,
                             alignment: FractionalOffset.topCenter,
                           ),
-                          SizedBox(height: 90),
+                          SizedBox(height: 40),
                           Container(
                             height: 400,
                             width: 350,
@@ -93,7 +93,7 @@ class _SecondPageState extends State<SecondPage> {
                                   ),
                                 ]),
                           ),
-                          SizedBox(height: 80),
+                          SizedBox(height: 100),
                           Text(
                             'By Pressing these buttons you are agreeing to our terms and conditions.',
                             style: TextStyle(
