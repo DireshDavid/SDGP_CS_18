@@ -31,13 +31,20 @@ class _StartupScreenState extends State<StartupScreen> {
                     child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
+                          Image(
+                            image: AssetImage('Assests/images.jpg'),
+                            height: 170,
+                            width: 100,
+                            alignment: FractionalOffset.topCenter,
+                          ),
                           Text(
                             'Drow-zy',
                             style: TextStyle(
-                                color: Colors.white,
+                                color: Color.fromARGB(255, 13, 130, 0),
                                 fontSize: 40,
                                 fontWeight: FontWeight.bold),
                           ),
+                          SizedBox(height: 50),
                           Text(
                             'SAFETY FOR ALL',
                             style: TextStyle(
@@ -45,19 +52,45 @@ class _StartupScreenState extends State<StartupScreen> {
                                 fontSize: 20,
                                 fontWeight: FontWeight.bold),
                           ),
-                          SizedBox(height: 500),
-                          ElevatedButton(
-                            style: ElevatedButton.styleFrom(
-                                primary: (Colors.black),
-                                fixedSize: Size(250, 70),
-                                shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(20))),
-                            onPressed: () {},
-                            child: Text('GET STARTED',
-                                style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.bold)),
+                          SizedBox(height: 150),
+                          Container(
+                            height: 300,
+                            width: 350,
+                            //color: Colors.black,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(30),
+                              color: Color.fromARGB(255, 223, 194, 194),
+                            ),
+                            child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: <Widget>[
+                                  Text(
+                                    'Welcome to our driver drowsiness prevention tool. You can help ensure the safety of yourself and others on the road.',
+                                    style: TextStyle(
+                                        color: Color.fromARGB(255, 0, 0, 0),
+                                        fontSize: 20,
+                                        //fontWeight: FontWeight.bold,
+                                        fontStyle: FontStyle.italic),
+                                    maxLines: 4,
+                                    textAlign: TextAlign.center,
+                                    overflow: TextOverflow.visible,
+                                  ),
+                                  SizedBox(height: 50),
+                                  ElevatedButton(
+                                    style: ElevatedButton.styleFrom(
+                                        primary: (Colors.black),
+                                        fixedSize: Size(250, 70),
+                                        shape: RoundedRectangleBorder(
+                                            borderRadius:
+                                                BorderRadius.circular(20))),
+                                    onPressed: () {},
+                                    child: Text('GET STARTED',
+                                        style: TextStyle(
+                                            color: Colors.white,
+                                            fontSize: 20,
+                                            fontWeight: FontWeight.bold)),
+                                  )
+                                ]),
                           )
                         ]),
                   )
