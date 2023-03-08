@@ -38,7 +38,7 @@ class _SecondPageState extends State<SecondPage> {
                             width: 200,
                             alignment: FractionalOffset.topCenter,
                           ),
-                          SizedBox(height: 40),
+                          SizedBox(height: 50),
                           Container(
                             height: 400,
                             width: 350,
@@ -97,10 +97,11 @@ class _SecondPageState extends State<SecondPage> {
                           Text(
                             'By Pressing these buttons you are agreeing to our terms and conditions.',
                             style: TextStyle(
-                                color: Color.fromARGB(255, 255, 255, 255),
-                                fontSize: 14,
-                                //fontWeight: FontWeight.bold,
-                                fontStyle: FontStyle.italic),
+                              color: Color.fromARGB(255, 255, 255, 255),
+                              fontSize: 14,
+                              //fontWeight: FontWeight.bold,
+                              //fontStyle: FontStyle.italic
+                            ),
                             maxLines: 5,
                             textAlign: TextAlign.center,
                             overflow: TextOverflow.visible,

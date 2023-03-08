@@ -71,7 +71,7 @@ class _StartupScreenState extends State<StartupScreen> {
                                         fontSize: 20,
                                         //fontWeight: FontWeight.bold,
                                         fontStyle: FontStyle.italic),
-                                    maxLines: 5,
+                                    maxLines: 6,
                                     textAlign: TextAlign.center,
                                     overflow: TextOverflow.visible,
                                   ),
