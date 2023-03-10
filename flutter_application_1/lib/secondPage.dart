@@ -19,12 +19,11 @@ class _SecondPageState extends State<SecondPage> {
                     height: double.infinity,
                     width: double.infinity,
                     decoration: BoxDecoration(
-                        //color: Color.fromARGB(255, 0, 33, 95),
                         gradient: LinearGradient(
                             begin: Alignment.topCenter,
                             end: Alignment.bottomCenter,
                             colors: [
-                          Color.fromARGB(248, 65, 170, 0),
+                          Color.fromARGB(248, 74, 193, 0),
                           Color.fromARGB(250, 26, 120, 34),
                           Color.fromARGB(252, 1, 71, 2),
                           Color.fromARGB(255, 0, 64, 13),
@@ -42,7 +41,6 @@ class _SecondPageState extends State<SecondPage> {
                           Container(
                             height: 400,
                             width: 350,
-                            //color: Colors.black,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(30),
                               color: Color.fromARGB(255, 245, 241, 218),
@@ -99,8 +97,6 @@ class _SecondPageState extends State<SecondPage> {
                             style: TextStyle(
                               color: Color.fromARGB(255, 255, 255, 255),
                               fontSize: 14,
-                              //fontWeight: FontWeight.bold,
-                              //fontStyle: FontStyle.italic
                             ),
                             maxLines: 5,
                             textAlign: TextAlign.center,

@@ -25,7 +25,7 @@ class _StartupScreenState extends State<StartupScreen> {
                             begin: Alignment.topCenter,
                             end: Alignment.bottomCenter,
                             colors: [
-                          Color.fromARGB(255, 104, 152, 249),
+                          Color.fromARGB(255, 110, 157, 250),
                           Color.fromARGB(251, 1, 95, 203),
                           Color.fromARGB(252, 1, 71, 183),
                           Color.fromARGB(255, 0, 38, 77),
@@ -56,7 +56,6 @@ class _StartupScreenState extends State<StartupScreen> {
                           Container(
                             height: 300,
                             width: 350,
-                            //color: Colors.black,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(30),
                               color: Color.fromARGB(255, 245, 241, 218),
@@ -69,7 +68,6 @@ class _StartupScreenState extends State<StartupScreen> {
                                     style: TextStyle(
                                         color: Color.fromARGB(255, 0, 0, 0),
                                         fontSize: 20,
-                                        //fontWeight: FontWeight.bold,
                                         fontStyle: FontStyle.italic),
                                     maxLines: 6,
                                     textAlign: TextAlign.center,
