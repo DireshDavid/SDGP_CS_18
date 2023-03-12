@@ -23,10 +23,10 @@ class _SecondPageState extends State<SecondPage> {
                             begin: Alignment.topCenter,
                             end: Alignment.bottomCenter,
                             colors: [
-                          Color.fromARGB(248, 74, 193, 0),
-                          Color.fromARGB(250, 26, 120, 34),
-                          Color.fromARGB(252, 1, 71, 2),
-                          Color.fromARGB(255, 0, 64, 13),
+                          Color.fromARGB(248, 67, 176, 0),
+                          Color.fromARGB(249, 30, 137, 39),
+                          Color.fromARGB(251, 1, 78, 2),
+                          Color.fromARGB(255, 0, 56, 11),
                         ])),
                     child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -43,7 +43,7 @@ class _SecondPageState extends State<SecondPage> {
                             width: 350,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(30),
-                              color: Color.fromARGB(255, 245, 241, 218),
+                              color: Color.fromARGB(255, 248, 244, 225),
                             ),
                             child: Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
@@ -95,10 +95,10 @@ class _SecondPageState extends State<SecondPage> {
                           Text(
                             'By Pressing these buttons you are agreeing to our terms and conditions.',
                             style: TextStyle(
-                              color: Color.fromARGB(255, 255, 255, 255),
+                              color: Color.fromARGB(255, 255, 252, 252),
                               fontSize: 14,
                             ),
-                            maxLines: 5,
+                            maxLines: 6,
                             textAlign: TextAlign.center,
                             overflow: TextOverflow.visible,
                           )

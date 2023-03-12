@@ -25,9 +25,9 @@ class _StartupScreenState extends State<StartupScreen> {
                             begin: Alignment.topCenter,
                             end: Alignment.bottomCenter,
                             colors: [
-                          Color.fromARGB(255, 110, 157, 250),
-                          Color.fromARGB(251, 1, 95, 203),
-                          Color.fromARGB(252, 1, 71, 183),
+                          Color.fromARGB(255, 98, 150, 253),
+                          Color.fromARGB(250, 0, 87, 186),
+                          Color.fromARGB(251, 1, 65, 168),
                           Color.fromARGB(255, 0, 38, 77),
                         ])),
                     child: Column(
@@ -41,9 +41,9 @@ class _StartupScreenState extends State<StartupScreen> {
                           ),
                           Text('Drow-zy',
                               style: TextStyle(
-                                  color: Color.fromARGB(255, 255, 225, 164),
+                                  color: Color.fromARGB(255, 251, 222, 165),
                                   fontSize: 50,
-                                  fontWeight: FontWeight.w500)),
+                                  fontWeight: FontWeight.w400)),
                           SizedBox(height: 50),
                           Text(
                             'SAFETY FOR ALL',
@@ -69,7 +69,7 @@ class _StartupScreenState extends State<StartupScreen> {
                                         color: Color.fromARGB(255, 0, 0, 0),
                                         fontSize: 20,
                                         fontStyle: FontStyle.italic),
-                                    maxLines: 6,
+                                    maxLines: 7,
                                     textAlign: TextAlign.center,
                                     overflow: TextOverflow.visible,
                                   ),
