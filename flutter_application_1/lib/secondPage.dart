@@ -23,10 +23,10 @@ class _SecondPageState extends State<SecondPage> {
                             begin: Alignment.topCenter,
                             end: Alignment.bottomCenter,
                             colors: [
-                          Color.fromARGB(248, 67, 176, 0),
-                          Color.fromARGB(249, 30, 137, 39),
-                          Color.fromARGB(251, 1, 78, 2),
-                          Color.fromARGB(255, 0, 56, 11),
+                          Color.fromARGB(255, 79, 136, 251),
+                          Color.fromARGB(250, 0, 87, 186),
+                          Color.fromARGB(251, 1, 65, 168),
+                          Color.fromARGB(255, 0, 38, 77),
                         ])),
                     child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -91,13 +91,13 @@ class _SecondPageState extends State<SecondPage> {
                                   ),
                                 ]),
                           ),
-                          SizedBox(height: 100),
+                          SizedBox(height: 125),
                           Text(
                             'By Pressing these buttons you are agreeing to our terms and conditions.',
                             style: TextStyle(
-                              color: Color.fromARGB(255, 255, 252, 252),
-                              fontSize: 14,
-                            ),
+                                color: Color.fromARGB(255, 255, 252, 252),
+                                fontSize: 14,
+                                fontWeight: FontWeight.w400),
                             maxLines: 6,
                             textAlign: TextAlign.center,
                             overflow: TextOverflow.visible,
