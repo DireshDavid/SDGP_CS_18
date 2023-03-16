@@ -44,7 +44,7 @@ class _StartupScreenState extends State<StartupScreen> {
                                   color: Color.fromARGB(255, 251, 222, 165),
                                   fontSize: 50,
                                   fontWeight: FontWeight.w400)),
-                          SizedBox(height: 50),
+                          SizedBox(height: 10),
                           Text(
                             'SAFETY FOR ALL',
                             style: TextStyle(
@@ -52,7 +52,7 @@ class _StartupScreenState extends State<StartupScreen> {
                                 fontSize: 18,
                                 fontWeight: FontWeight.w500),
                           ),
-                          SizedBox(height: 140),
+                          SizedBox(height: 10),
                           Container(
                             height: 300,
                             width: 350,
@@ -74,7 +74,7 @@ class _StartupScreenState extends State<StartupScreen> {
                                     textAlign: TextAlign.center,
                                     overflow: TextOverflow.visible,
                                   ),
-                                  SizedBox(height: 50),
+                                  SizedBox(height: 0),
                                   ElevatedButton(
                                     style: ElevatedButton.styleFrom(
                                         primary: (Colors.black),
@@ -97,7 +97,7 @@ class _StartupScreenState extends State<StartupScreen> {
                                   ),
                                 ]),
                           ),
-                          SizedBox(height: 50),
+                          SizedBox(height: 0),
                         ]),
                   )
                 ],
