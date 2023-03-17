@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_application_1/secondpage.dart';
+import 'adavancedMonitoring.dart';
 
 class StartupScreen extends StatefulWidget {
   @override
@@ -25,10 +26,10 @@ class _StartupScreenState extends State<StartupScreen> {
                             begin: Alignment.topCenter,
                             end: Alignment.bottomCenter,
                             colors: [
-                          Color.fromARGB(255, 79, 136, 251),
-                          Color.fromARGB(250, 0, 87, 186),
-                          Color.fromARGB(251, 1, 65, 168),
-                          Color.fromARGB(255, 0, 38, 77),
+                          Color.fromARGB(248, 65, 170, 0),
+                          Color.fromARGB(250, 26, 120, 34),
+                          Color.fromARGB(252, 1, 71, 2),
+                          Color.fromARGB(255, 0, 64, 13),
                         ])),
                     child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
