@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_application_1/adavancedMonitoring.dart';
 import 'package:flutter_application_1/camera_page.dart';
 
 class SecondPage extends StatefulWidget {
@@ -78,7 +79,13 @@ class _SecondPageState extends State<SecondPage> {
                                         shape: RoundedRectangleBorder(
                                             borderRadius:
                                                 BorderRadius.circular(25))),
-                                    onPressed: () {},
+                                    onPressed: () {
+                                      Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) =>
+                                                  AdvancedMonitoring()));
+                                    },
                                     child: Text('ADVANCED MONITORING',
                                         style: TextStyle(
                                             color: Colors.white,
