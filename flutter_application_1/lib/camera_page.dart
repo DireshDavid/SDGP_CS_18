@@ -11,7 +11,6 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-
   CameraImage? cameraImage;
   CameraController? cameraController;
   String output = '';
