@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:Drowsy/adavancedMonitoring.dart';
-import 'package:Drowsy/camera_page.dart';
+import 'package:flutter_application_1/adavancedMonitoring.dart';
+import 'package:flutter_application_1/camera_page.dart';
 
 class SecondPage extends StatefulWidget {
   @override
