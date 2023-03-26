@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'camera_page.dart';class AdvancedMonitoring extends StatefulWidget {
 
-class AdvancedMonitoring extends StatefulWidget {
+
   @override
   _AdvancedMonitoringState createState() => _AdvancedMonitoringState();
 }
@@ -26,7 +27,7 @@ class _AdvancedMonitoringState extends State<AdvancedMonitoring> {
             ),
             child: Text(
               "ADVANCED\nMONITORING",
-              style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+              style: TextStyle(color: Color.fromARGB(255, 251, 222, 165), fontSize: 50, fontWeight: FontWeight.w400),
             ),
           ),
           SizedBox(
@@ -34,11 +35,20 @@ class _AdvancedMonitoringState extends State<AdvancedMonitoring> {
           ),
           Container(
             // margin: EdgeInsets.only(top: 220),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [Text("hello i am .........")],
-            ),
-          ),
+            child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Text(
+                "Advanced monitoring helps you to stay alert and attentive at the wheel when you're wearing sunglasses. First, a time interval is set. By the end of every time interval, an alarm will be activated and you will have to turn it off. This functionality works in tandem with our sleepiness detector.",
+               style: TextStyle(
+                    color: Color.fromARGB(255, 0, 0, 0),
+                    fontSize: 20,
+                    fontWeight: FontWeight.w400,
+                    fontStyle: FontStyle.italic),
+               maxLines: 7,
+               textAlign: TextAlign.center,
+               overflow: TextOverflow.visible,
+                  ),
           // Container(
           //   width: double.infinity - 150,
           //   margin: EdgeInsets.only(top: 300, left: 75),
@@ -67,12 +77,12 @@ class _AdvancedMonitoringState extends State<AdvancedMonitoring> {
                   //       fixedSize: Size(250, 70),
                   //       shape: RoundedRectangleBorder(
                   //           borderRadius: BorderRadius.circular(25))),
-                  //   // onPressed: () {
-                  //   //   Navigator.push(
-                  //   //       context,
-                  //   //       MaterialPageRoute(
-                  //   //           builder: (context) => CameraPage()));
-                  //   // },
+                  //   onPressed: () {
+                  //     Navigator.push(
+                  //         context,
+                  //         MaterialPageRoute(
+                  //             builder: (context) => Home()));
+                  //   },
                   //   child: Text('Turn on camera',
                   //       style: TextStyle(
                   //           color: Colors.white,
@@ -106,27 +116,10 @@ class _AdvancedMonitoringState extends State<AdvancedMonitoring> {
               //   //   child: Text("turn on ccamera"),
               //   // ),
               // ])
-              Container(
-                alignment: Alignment.center,
-                padding: EdgeInsets.only(top: 50),
-                width: double.infinity,
-                height: 101,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(50),
-                    topRight: Radius.circular(50),
-                  ),
-                  color: Color.fromARGB(255, 194, 180, 180),
-                ),
-                child: Text(
-                  "SET FOR EVERY",
-                  style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
-                ),
-              ),
             ],
           ),
         ]),
       ),
-    );
+    ])));
   }
 }
