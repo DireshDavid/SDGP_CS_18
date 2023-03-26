@@ -63,7 +63,7 @@ class _SecondPageState extends State<SecondPage> {
                                           context,
                                           CupertinoPageRoute(
                                               builder: (context) =>
-                                                  const CameraPage()));
+                                                  const Home()));
                                     },
                                     child: Text('STANDARD MONITORING',
                                         style: TextStyle(
