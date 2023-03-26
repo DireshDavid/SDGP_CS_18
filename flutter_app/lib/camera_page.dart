@@ -71,29 +71,69 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('detection'),
+        title: Text('Object Detection'),
+        backgroundColor: Colors.blueGrey[900],
       ),
-      body:Column(
-        children: [
-          Padding(padding:
-          EdgeInsets.all(20),
-            child: Container(
-              height: MediaQuery.of(context).size.height*0.7,
-              width: MediaQuery.of(context).size.width,
-              child: !cameraController!.value.isInitialized?
-              Container():
-              AspectRatio(aspectRatio: cameraController!.value.aspectRatio,
-                child: CameraPreview(cameraController!),),
-
-            ),
+      body: Container(
+        decoration: const BoxDecoration(
+          gradient: LinearGradient(
+            colors: [
+              Color.fromARGB(255, 79, 136, 251),
+              Color.fromARGB(250, 0, 87, 186),
+              Color.fromARGB(251, 1, 65, 168),
+              Color.fromARGB(255, 0, 38, 77),
+            ],
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
           ),
-          Text(output,
-            style: TextStyle(
+        ),
+        child: Column(
+          children: [
+            Padding(
+              padding: EdgeInsets.all(20),
+              child: Container(
+                height: MediaQuery.of(context).size.height * 0.7,
+                width: MediaQuery.of(context).size.width,
+
+                decoration: BoxDecoration(
+                  color: Colors.black,
+                  border: Border.all(
+                    color: Colors.grey[800]!,
+                    width: 2.0,
+                  ),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: !cameraController!.value.isInitialized
+                    ? Container(
+                  child: const Center(
+                    child: Text(
+                      'Camera not available',
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                )
+                    : AspectRatio(
+                  aspectRatio: cameraController!.value.aspectRatio,
+                  child: CameraPreview(cameraController!),
+                ),
+              ),
+            ),
+            Text(
+              output,
+              style: TextStyle(
                 fontWeight: FontWeight.bold,
-                fontSize: 20
-            ),)
-        ],
-      ) ,
+                fontSize: 20,
+                color: Colors.grey[800],
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
+
 }
