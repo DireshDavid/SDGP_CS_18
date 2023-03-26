@@ -1,7 +1,6 @@
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:tflite/tflite.dart';
-
 import 'main.dart';
 
 class Home extends StatefulWidget {
@@ -63,7 +62,7 @@ class _HomeState extends State<Home> {
   }
 
   loadmodel()async{
-    await Tflite.loadModel(model: "assets/Final_model.tflite",labels: "assets/labels.txt");
+    await Tflite.loadModel(model: "Assests/Final_model.tflite",labels: "Assests/labels.txt");
   }
 
 

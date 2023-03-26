@@ -64,6 +64,8 @@ flutter:
   assets:
     - Assests/images.jpg
     - Assests/logo.png
+    - Assests/Final_model.tflite
+    - Assests/labels.txt
     
 
   # An image asset can refer to one or more resolution-specific "variants", see

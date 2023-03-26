@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'startupScreen.dart';
 
 List<CameraDescription>? cameras;
+
 void main() async {
   cameras = await availableCameras();
   runApp(const MyApp());
