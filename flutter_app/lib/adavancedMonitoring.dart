@@ -11,13 +11,14 @@ class _AdvancedMonitoringState extends State<AdvancedMonitoring> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: Column(children: [
           Container(
             alignment: Alignment.center,
             padding: EdgeInsets.only(top: 50),
             width: double.infinity,
-            height: 200,
+            height: 350,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.only(
                 bottomLeft: Radius.circular(25),
@@ -31,7 +32,7 @@ class _AdvancedMonitoringState extends State<AdvancedMonitoring> {
             ),
           ),
           SizedBox(
-            height: 20,
+            height: 100,
           ),
           Container(
             // margin: EdgeInsets.only(top: 220),
@@ -41,6 +42,7 @@ class _AdvancedMonitoringState extends State<AdvancedMonitoring> {
               Text(
                 "Advanced monitoring helps you to stay alert and attentive at the wheel when you're wearing sunglasses. First, a time interval is set. By the end of every time interval, an alarm will be activated and you will have to turn it off. This functionality works in tandem with our sleepiness detector.",
                style: TextStyle(
+                 height: 1.5,
                     color: Color.fromARGB(255, 0, 0, 0),
                     fontSize: 20,
                     fontWeight: FontWeight.w400,
@@ -53,7 +55,12 @@ class _AdvancedMonitoringState extends State<AdvancedMonitoring> {
           //   width: double.infinity - 150,
           //   margin: EdgeInsets.only(top: 300, left: 75),
           SizedBox(
-            height: 150,
+            child: Center(
+              child: Container(
+                height: 100,
+                width: 100,
+              ),
+            ),
           ),
           Column(
             children: [
@@ -61,15 +68,21 @@ class _AdvancedMonitoringState extends State<AdvancedMonitoring> {
                 padding: const EdgeInsets.all(15.0),
                 child: Row(children: [
                   Container(
-                    height: 50,
-                    width: 75,
+                    alignment: Alignment.center,
+                    height: 70,
+                    width: 80,
                     child: Icon(Icons.video_camera_back),
                     decoration: BoxDecoration(
                         color: Color.fromARGB(255, 225, 222, 216),
                         borderRadius: BorderRadius.circular(25)),
                   ),
                   SizedBox(
-                    width: 20,
+                    child: Center(
+                      child: Container(
+                        alignment: Alignment.center,
+                        width: 400,
+                      ),
+                    ),
                   ),
                   ElevatedButton(
                     style: ElevatedButton.styleFrom(
@@ -92,7 +105,7 @@ class _AdvancedMonitoringState extends State<AdvancedMonitoring> {
                 ]),
               ),
               SizedBox(
-                height: 214,
+                height: 100,
               ),
               // Row(children: [
               //   Container(
@@ -116,7 +129,22 @@ class _AdvancedMonitoringState extends State<AdvancedMonitoring> {
               //   //   child: Text("turn on ccamera"),
               //   // ),
               // ])
-            ],
+              SizedBox(
+                height: 91.7,
+              ),
+              Container(
+                alignment: Alignment.center,
+                padding: EdgeInsets.only(top: 50),
+                width: double.infinity,
+                height: 350,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(25),
+                    topRight: Radius.circular(25),
+                  ),
+                  color: Colors.green,
+                ),
+              )],
           ),
         ]),
       ),
