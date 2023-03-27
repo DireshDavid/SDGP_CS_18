@@ -28,13 +28,23 @@ class _AdvancedMonitoringState extends State<AdvancedMonitoring> {
             ),
             child: Text(
               "ADVANCED\nMONITORING",
-              style: TextStyle(color: Color.fromARGB(255, 251, 222, 165), fontSize: 50, fontWeight: FontWeight.w400),
+              style: TextStyle(color: Colors.black, fontSize: 50, fontWeight: FontWeight.bold),
             ),
           ),
+           Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Image(
+                  image: AssetImage('Assests/logo.png'),
+                  height: 200,
+                  width: 200,
+                  alignment: FractionalOffset.topCenter,
+                ),
           SizedBox(
-            height: 100,
+            height: 50,
           ),
           Container(
+            alignment: Alignment.center,
             // margin: EdgeInsets.only(top: 220),
             child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -51,39 +61,26 @@ class _AdvancedMonitoringState extends State<AdvancedMonitoring> {
                textAlign: TextAlign.center,
                overflow: TextOverflow.visible,
                   ),
-          // Container(
-          //   width: double.infinity - 150,
-          //   margin: EdgeInsets.only(top: 300, left: 75),
           SizedBox(
             child: Center(
               child: Container(
-                height: 100,
+                height: 50,
                 width: 100,
               ),
             ),
           ),
           Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Padding(
                 padding: const EdgeInsets.all(15.0),
                 child: Row(children: [
-                  Container(
-                    alignment: Alignment.center,
-                    height: 70,
-                    width: 80,
-                    child: Icon(Icons.video_camera_back),
-                    decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 225, 222, 216),
-                        borderRadius: BorderRadius.circular(25)),
-                  ),
                   SizedBox(
-                    child: Center(
                       child: Container(
                         alignment: Alignment.center,
-                        width: 400,
+                        width: 485,
                       ),
                     ),
-                  ),
                   ElevatedButton(
                     style: ElevatedButton.styleFrom(
                         primary: (Colors.black),
@@ -105,30 +102,8 @@ class _AdvancedMonitoringState extends State<AdvancedMonitoring> {
                 ]),
               ),
               SizedBox(
-                height: 100,
+                height: 50,
               ),
-              // Row(children: [
-              //   Container(
-              //     height: 50,
-              //     width: 50,
-              //     color: Colors.red,
-              //   ),
-              //   SizedBox(
-              //     width: 20,
-              //   ),
-              //   // Container(
-              //   //   alignment: Alignment.center,
-              //   //   height: 45,
-              //   //   width: 220,
-              //   //   decoration: BoxDecoration(
-              //   //     borderRadius: BorderRadius.all(
-              //   //       Radius.circular(20),
-              //   //     ),
-              //   //     color: Colors.green,
-              //   //   ),
-              //   //   child: Text("turn on ccamera"),
-              //   // ),
-              // ])
               SizedBox(
                 height: 91.7,
               ),
@@ -148,6 +123,6 @@ class _AdvancedMonitoringState extends State<AdvancedMonitoring> {
           ),
         ]),
       ),
-    ])));
+    ])])));
   }
 }
