@@ -71,24 +71,24 @@ class _AdvancedMonitoringState extends State<AdvancedMonitoring> {
                   SizedBox(
                     width: 20,
                   ),
-                  // ElevatedButton(
-                  //   style: ElevatedButton.styleFrom(
-                  //       primary: (Colors.black),
-                  //       fixedSize: Size(250, 70),
-                  //       shape: RoundedRectangleBorder(
-                  //           borderRadius: BorderRadius.circular(25))),
-                  //   onPressed: () {
-                  //     Navigator.push(
-                  //         context,
-                  //         MaterialPageRoute(
-                  //             builder: (context) => Home()));
-                  //   },
-                  //   child: Text('Turn on camera',
-                  //       style: TextStyle(
-                  //           color: Colors.white,
-                  //           fontSize: 20,
-                  //           fontWeight: FontWeight.bold)),
-                  // ),
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        primary: (Colors.black),
+                        fixedSize: Size(250, 70),
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(25))),
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => Home()));
+                    },
+                    child: Text('Turn on camera',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold)),
+                  ),
                 ]),
               ),
               SizedBox(
