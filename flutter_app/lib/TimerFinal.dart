@@ -1,12 +1,13 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:audioplayers/audioplayers.dart';
+
 void main() {
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  const MyApp({Key? key}) : super(key: key);
 
   // This widget is the root of your application.
   @override
@@ -31,11 +32,14 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   final player = AudioPlayer();
+  bool _isPlaying = false;
   int _counter = 10;
   late Timer _timer;
+  bool _timerStarted = false;
 
   void _startTimer(){
     _counter = 10;
+    _timerStarted = true;
 
     _timer = Timer.periodic(Duration(seconds: 1), (timer) {
       setState(() {
@@ -43,11 +47,26 @@ class _MyHomePageState extends State<MyHomePage> {
           _counter--;
         } else {
           _timer.cancel();
-          player.play(AssetSource("Alarm_sound.mp3"));
+          _isPlaying = true;
+          player.play(AssetSource("Alarm_sound.mp3")).then((_) {
+            _isPlaying = false;
+            _timerStarted = false;
+          });
         }
       });
     });
   }
+
+  void _stopTimer() {
+    _timer.cancel();
+    setState(() {
+      _counter = 10;
+    });
+    if (_isPlaying) {
+      player.stop();
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -55,31 +74,49 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
+            _timerStarted ? Text(
+                "Timer has started",
+            style: TextStyle(
+            color: Colors.green,
+            fontWeight: FontWeight.bold,
+            fontSize: 30)) : Container(),
             (_counter > 0) ?
-            Text("") :
+            Container() :
             Text(
-                "Are you awake?",
-                style: TextStyle(color: Colors.green,
-                fontWeight: FontWeight.bold,
-                fontSize: 40),
+              "Are you awake?",
+              style: TextStyle(
+                  color: Colors.green,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 40),
             ),
-            // Text("$_counter",
-            //   style: TextStyle(
-            //       fontSize: 60,
-            //       fontWeight: FontWeight.bold,
-            //       color: Colors.green),
-            // ),
             ElevatedButton(
               onPressed: () => _startTimer(),
               style: ElevatedButton.styleFrom(
-                primary: Colors.green,
-                shape: CircleBorder(),
-                fixedSize: Size(110, 110)
+                  primary: Colors.green,
+                  shape: CircleBorder(),
+                  fixedSize: Size(110, 110)
               ),
-              child: Text("Start Timer"))
+              child: Text(_counter > 0 ? "Start Timer" : "I'm awake"),
+            ),
+            if (_counter == 0)
+              Container(
+                width: double.infinity,
+                height: 50,
+                margin: EdgeInsets.symmetric(horizontal: 30),
+                child: ElevatedButton(
+                  onPressed: _stopTimer,
+                  style: ElevatedButton.styleFrom(
+                      primary: Colors.red,
+                      shape: CircleBorder(),
+                      fixedSize: Size(110, 110)
+                  ),
+                  child: Text("End"),
+                ),
+              ),
           ],
         ),
       ),
     );
   }
 }
+
