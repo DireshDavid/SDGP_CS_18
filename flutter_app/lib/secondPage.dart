@@ -27,22 +27,24 @@ class _SecondPageState extends State<SecondPage> {
                             end: Alignment.bottomCenter,
                             //background colour
                             colors: [
-                          Color.fromARGB(248, 65, 170, 0),
-                          Color.fromARGB(250, 26, 120, 34),
-                          Color.fromARGB(252, 1, 71, 2),
-                          Color.fromARGB(255, 0, 64, 13),
-                        ])),
+                              Color.fromARGB(248, 65, 170, 0),
+                              Color.fromARGB(250, 26, 120, 34),
+                              Color.fromARGB(252, 1, 71, 2),
+                              Color.fromARGB(255, 0, 64, 13),
+                            ])),
                     child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
+                          SizedBox(height: 40),
                           Image(
                             //adding logo
                             image: AssetImage('Assests/logo.png'),
-                            height: 200,
-                            width: 200,
+                            height: 105,
+                            width: 105,
                             alignment: FractionalOffset.topCenter,
                           ),
-                          SizedBox(height: 50),
+
+                          SizedBox(height: 100),
                           Container(
                             height: 400,
                             width: 350,
@@ -59,14 +61,14 @@ class _SecondPageState extends State<SecondPage> {
                                         fixedSize: Size(275, 70),
                                         shape: RoundedRectangleBorder(
                                             borderRadius:
-                                                BorderRadius.circular(25))),
+                                            BorderRadius.circular(25))),
                                     onPressed: () {
                                       //method which navigate to standard monitoring page
                                       Navigator.push(
                                           context,
                                           CupertinoPageRoute(
                                               builder: (context) =>
-                                                  const Home()));
+                                              const Home()));
                                     },
                                     child: Text('STANDARD MONITORING',
                                         style: TextStyle(
@@ -74,14 +76,14 @@ class _SecondPageState extends State<SecondPage> {
                                             fontSize: 17,
                                             fontWeight: FontWeight.bold)),
                                   ),
-                                  SizedBox(height: 70),
+                                  SizedBox(height: 50),
                                   ElevatedButton(
                                     style: ElevatedButton.styleFrom(
                                         primary: (Colors.black),
                                         fixedSize: Size(275, 70),
                                         shape: RoundedRectangleBorder(
                                             borderRadius:
-                                                BorderRadius.circular(25))),
+                                            BorderRadius.circular(25))),
                                     onPressed: () {
                                       //method which navigate to advanced monitoring page
                                       Navigator.push(
@@ -96,7 +98,7 @@ class _SecondPageState extends State<SecondPage> {
                                             fontSize: 17,
                                             fontWeight: FontWeight.bold)),
                                   ),
-                                  SizedBox(height: 25),
+                                  SizedBox(height: 30),
                                   Text(
                                     'Choose if you are wearing sunglasses',
                                     style: TextStyle(
@@ -110,7 +112,7 @@ class _SecondPageState extends State<SecondPage> {
                                   ),
                                 ]),
                           ),
-                          SizedBox(height: 125),
+                          SizedBox(height: 140),
                           Text(
                             'By Pressing these buttons you are agreeing to our terms and conditions.',
                             style: TextStyle(
