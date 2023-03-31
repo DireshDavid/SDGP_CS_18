@@ -22,6 +22,7 @@ class _StartupScreenState extends State<StartupScreen> {
                     width: double.infinity,
                     decoration: BoxDecoration(
                         //color: Color.fromARGB(255, 0, 33, 95),
+                        //background colour
                         gradient: LinearGradient(
                             begin: Alignment.topCenter,
                             end: Alignment.bottomCenter,
@@ -34,13 +35,15 @@ class _StartupScreenState extends State<StartupScreen> {
                     child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
+                          //Logo
                           Image(
                             image: AssetImage('Assests/logo.png'),
                             height: 200,
                             width: 200,
                             alignment: FractionalOffset.topCenter,
                           ),
-                          Text('Drow-zy',
+                          //Name
+                          Text('AWAKELY',
                               style: TextStyle(
                                   color: Color.fromARGB(255, 251, 222, 165),
                                   fontSize: 50,
