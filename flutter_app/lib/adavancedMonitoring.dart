@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'dart:async';
+import 'package:audioplayers/audioplayers.dart';
+import 'package:Drowsy/TimerFinal.dart';
 import 'camera_page.dart';class AdvancedMonitoring extends StatefulWidget {
 
 
@@ -13,7 +16,9 @@ class _AdvancedMonitoringState extends State<AdvancedMonitoring> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: Column(children: [
+        body: SingleChildScrollView(
+            child: Column(
+            children: [
           Container(
             alignment: Alignment.center,
             padding: EdgeInsets.only(top: 50),
@@ -72,35 +77,34 @@ class _AdvancedMonitoringState extends State<AdvancedMonitoring> {
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Padding(
-                padding: const EdgeInsets.all(15.0),
-                child: Row(children: [
-                  SizedBox(
-                      child: Container(
-                        alignment: Alignment.center,
-                        width: 485,
-                      ),
-                    ),
-                  ElevatedButton(
+          Padding(
+          padding: const EdgeInsets.all(15.0),
+            child: Row(
+              children: [
+                Expanded(
+                  child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
                         primary: (Colors.black),
-                        fixedSize: Size(250, 70),
+                        fixedSize: Size(70, 70),
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(25))),
                     onPressed: () {
                       Navigator.push(
                           context,
-                          MaterialPageRoute(
-                              builder: (context) => Home()));
+                          MaterialPageRoute(builder: (context) => Home()));
+                      main(); // Timer file main method called
                     },
-                    child: Text('Turn on camera',
+                    child: Text(
+                        'Turn on camera',
                         style: TextStyle(
                             color: Colors.white,
                             fontSize: 20,
                             fontWeight: FontWeight.bold)),
                   ),
-                ]),
-              ),
+                ),
+              ],
+            ),
+          ),
               SizedBox(
                 height: 50,
               ),
@@ -123,6 +127,9 @@ class _AdvancedMonitoringState extends State<AdvancedMonitoring> {
           ),
         ]),
       ),
-    ])])));
+    ])]))));
   }
 }
+
+
+
