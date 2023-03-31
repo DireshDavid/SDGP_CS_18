@@ -25,16 +25,18 @@ class _SecondPageState extends State<SecondPage> {
                         gradient: LinearGradient(
                             begin: Alignment.topCenter,
                             end: Alignment.bottomCenter,
+                            //background colour
                             colors: [
-                          Color.fromARGB(255, 79, 136, 251),
-                          Color.fromARGB(250, 0, 87, 186),
-                          Color.fromARGB(251, 1, 65, 168),
-                          Color.fromARGB(255, 0, 38, 77),
+                          Color.fromARGB(248, 65, 170, 0),
+                          Color.fromARGB(250, 26, 120, 34),
+                          Color.fromARGB(252, 1, 71, 2),
+                          Color.fromARGB(255, 0, 64, 13),
                         ])),
                     child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
                           Image(
+                            //adding logo
                             image: AssetImage('Assests/logo.png'),
                             height: 200,
                             width: 200,
@@ -59,6 +61,7 @@ class _SecondPageState extends State<SecondPage> {
                                             borderRadius:
                                                 BorderRadius.circular(25))),
                                     onPressed: () {
+                                      //method which navigate to standard monitoring page
                                       Navigator.push(
                                           context,
                                           CupertinoPageRoute(
@@ -80,6 +83,7 @@ class _SecondPageState extends State<SecondPage> {
                                             borderRadius:
                                                 BorderRadius.circular(25))),
                                     onPressed: () {
+                                      //method which navigate to advanced monitoring page
                                       Navigator.push(
                                           context,
                                           MaterialPageRoute(

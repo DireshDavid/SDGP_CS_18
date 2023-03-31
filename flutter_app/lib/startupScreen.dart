@@ -35,7 +35,7 @@ class _StartupScreenState extends State<StartupScreen> {
                     child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
-                          //Logo
+                          //adding logo
                           Image(
                             image: AssetImage('Assests/logo.png'),
                             height: 200,
@@ -67,6 +67,7 @@ class _StartupScreenState extends State<StartupScreen> {
                             child: Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: <Widget>[
+                                  //introduction about app
                                   Text(
                                     'Welcome to our driver drowsiness prevention tool. By using this tool, you can help ensure the safety of yourself and others on the road.',
                                     style: TextStyle(
@@ -87,13 +88,14 @@ class _StartupScreenState extends State<StartupScreen> {
                                             borderRadius:
                                                 BorderRadius.circular(25))),
                                     onPressed: () {
+                                      //method which navigate to second page
                                       Navigator.push(
                                           context,
                                           MaterialPageRoute(
                                               builder: (context) =>
                                                   SecondPage()));
                                     },
-                                    child: Text('GET STARTED',
+                                    child: Text('GET STARTED', //button
                                         style: TextStyle(
                                             color: Colors.white,
                                             fontSize: 20,
