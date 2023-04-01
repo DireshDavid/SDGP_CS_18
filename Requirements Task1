@@ -1,7 +1,0 @@
-Download Anaconda 
-
-Required files:
-1) haarcascade_frontalface_default.xml
-2) haarcascade_eye.xml
-
-dataset: https://www.kaggle.com/datasets/dheerajperumandla/drowsiness-dataset
