@@ -27,11 +27,11 @@ class _SecondPageState extends State<SecondPage> {
                             end: Alignment.bottomCenter,
                             //background colour
                             colors: [
-                              Color.fromARGB(248, 65, 170, 0),
-                              Color.fromARGB(250, 26, 120, 34),
-                              Color.fromARGB(252, 1, 71, 2),
-                              Color.fromARGB(255, 0, 64, 13),
-                            ])),
+                          Color.fromARGB(248, 65, 170, 0),
+                          Color.fromARGB(250, 26, 120, 34),
+                          Color.fromARGB(252, 1, 71, 2),
+                          Color.fromARGB(255, 0, 64, 13),
+                        ])),
                     child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
@@ -43,10 +43,9 @@ class _SecondPageState extends State<SecondPage> {
                             width: 105,
                             alignment: FractionalOffset.topCenter,
                           ),
-
                           SizedBox(height: 100),
                           Container(
-                            height: 400,
+                            height: 500,
                             width: 350,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(30),
@@ -61,14 +60,14 @@ class _SecondPageState extends State<SecondPage> {
                                         fixedSize: Size(275, 70),
                                         shape: RoundedRectangleBorder(
                                             borderRadius:
-                                            BorderRadius.circular(25))),
+                                                BorderRadius.circular(25))),
                                     onPressed: () {
                                       //method which navigate to standard monitoring page
                                       Navigator.push(
                                           context,
                                           CupertinoPageRoute(
                                               builder: (context) =>
-                                              const Home()));
+                                                  const Home()));
                                     },
                                     child: Text('STANDARD MONITORING',
                                         style: TextStyle(
@@ -83,7 +82,7 @@ class _SecondPageState extends State<SecondPage> {
                                         fixedSize: Size(275, 70),
                                         shape: RoundedRectangleBorder(
                                             borderRadius:
-                                            BorderRadius.circular(25))),
+                                                BorderRadius.circular(25))),
                                     onPressed: () {
                                       //method which navigate to advanced monitoring page
                                       Navigator.push(

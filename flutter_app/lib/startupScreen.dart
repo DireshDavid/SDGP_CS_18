@@ -4,7 +4,6 @@ import 'package:Drowsy/secondpage.dart';
 import 'adavancedMonitoring.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-
 class StartupScreen extends StatefulWidget {
   @override
   _StartupScreenState createState() => _StartupScreenState();
@@ -23,33 +22,35 @@ class _StartupScreenState extends State<StartupScreen> {
                     height: double.infinity,
                     width: double.infinity,
                     decoration: BoxDecoration(
-                      //color: Color.fromARGB(255, 0, 33, 95),
-                      //background colour
+                        //color: Color.fromARGB(255, 0, 33, 95),
+                        //background colour
                         gradient: LinearGradient(
                             begin: Alignment.topCenter,
                             end: Alignment.bottomCenter,
                             colors: [
-                              Color.fromARGB(248, 65, 170, 0),
-                              Color.fromARGB(250, 26, 120, 34),
-                              Color.fromARGB(252, 1, 71, 2),
-                              Color.fromARGB(255, 0, 64, 13),
-                            ])),
+                          Color.fromARGB(248, 176, 253, 127),
+                          Color.fromARGB(248, 100, 190, 108),
+                          Color.fromARGB(251, 129, 241, 130),
+                          Color.fromARGB(255, 0, 64, 13),
+                        ])),
                     child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
                           //adding logo
+                          SizedBox(height: 50),
                           Image(
                             image: AssetImage('Assests/logo.png'),
                             height: 105,
                             width: 105,
                             alignment: FractionalOffset.topCenter,
                           ),
-                          SizedBox(height: 70),
+                          SizedBox(height: 60),
                           //Name
                           Text('AWAKELY',
-                              style: GoogleFonts.junge(fontSize: 45,
+                              style: GoogleFonts.junge(
+                                  fontSize: 45,
                                   fontWeight: FontWeight.w800,
-                                  color: Color.fromRGBO(250, 238, 132, 30))),
+                                  color: Color.fromRGBO(0, 0, 0, 0.886))),
                           /*Image(
                             image: AssetImage('Assests/name.png'),
                             height: 200,
@@ -57,21 +58,21 @@ class _StartupScreenState extends State<StartupScreen> {
                             alignment: FractionalOffset.topCenter,
                           ),*/
 
-                          SizedBox(height: 30),
+                          SizedBox(height: 20),
                           Text(
                             'SAFETY FOR ALL',
                             style: TextStyle(
-                                color: Color.fromARGB(255, 255, 255, 255),
+                                color: Color.fromARGB(255, 87, 71, 0),
                                 fontSize: 18,
                                 fontWeight: FontWeight.w500),
                           ),
-                          SizedBox(height: 160),
+                          SizedBox(height: 100),
                           Container(
-                            height: 300,
-                            width: 350,
+                            height: 439,
+                            width: double.infinity,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(30),
-                              color: Color.fromARGB(255, 245, 241, 218),
+                              color: Color.fromARGB(255, 245, 244, 235),
                             ),
                             child: Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
@@ -81,21 +82,23 @@ class _StartupScreenState extends State<StartupScreen> {
                                     'Welcome to our driver drowsiness prevention tool. By using this tool, you can help ensure the safety of yourself and others on the road.',
                                     style: TextStyle(
                                         color: Color.fromARGB(255, 0, 0, 0),
-                                        fontSize: 20,
+                                        fontSize: 22,
                                         fontWeight: FontWeight.w400,
                                         fontStyle: FontStyle.italic),
                                     maxLines: 7,
                                     textAlign: TextAlign.center,
                                     overflow: TextOverflow.visible,
                                   ),
-                                  SizedBox(height: 50),
+                                  Padding(padding: EdgeInsets.all(40)),
+                                  //SizedBox(height: 70),
                                   ElevatedButton(
                                     style: ElevatedButton.styleFrom(
-                                        primary: (Colors.black),
-                                        fixedSize: Size(250, 70),
+                                        primary:
+                                            (Color.fromARGB(255, 31, 165, 0)),
+                                        fixedSize: Size(250, 80),
                                         shape: RoundedRectangleBorder(
                                             borderRadius:
-                                            BorderRadius.circular(25))),
+                                                BorderRadius.circular(25))),
                                     onPressed: () {
                                       //method which navigate to second page
                                       Navigator.push(
@@ -106,13 +109,13 @@ class _StartupScreenState extends State<StartupScreen> {
                                     },
                                     child: Text('GET STARTED', //button
                                         style: TextStyle(
-                                            color: Colors.white,
-                                            fontSize: 20,
+                                            color: Color.fromARGB(255, 0, 0, 0),
+                                            fontSize: 27,
                                             fontWeight: FontWeight.bold)),
                                   ),
                                 ]),
                           ),
-                          SizedBox(height: 10),
+                          //SizedBox(height: 10),
                         ]),
                   )
                 ],
