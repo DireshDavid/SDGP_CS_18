@@ -29,8 +29,8 @@ class _StartupScreenState extends State<StartupScreen> {
                             end: Alignment.bottomCenter,
                             colors: [
                           Color.fromARGB(248, 176, 253, 127),
-                          Color.fromARGB(248, 100, 190, 108),
-                          Color.fromARGB(251, 129, 241, 130),
+                          Color.fromARGB(248, 102, 190, 109),
+                          Color.fromARGB(250, 61, 177, 63),
                           Color.fromARGB(255, 0, 64, 13),
                         ])),
                     child: Column(
