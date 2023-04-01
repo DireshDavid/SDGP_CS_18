@@ -76,7 +76,7 @@ class _SecondPageState extends State<SecondPage> {
                                             fontSize: 18,
                                             fontWeight: FontWeight.bold)),
                                   ),
-                                  SizedBox(height: 60),
+                                  SizedBox(height: 80),
                                   ElevatedButton(
                                     style: ElevatedButton.styleFrom(
                                         primary: (Colors.black),
