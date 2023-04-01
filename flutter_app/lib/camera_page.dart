@@ -11,13 +11,12 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-
   CameraImage? cameraImage;
   CameraController? cameraController;
   String output = '';
 
   @override
-  void initState(){
+  void initState() {
     super.initState();
     loadCamera();
     loadmodel();
@@ -25,10 +24,10 @@ class _HomeState extends State<Home> {
 
   loadCamera() {
     cameraController = CameraController(cameras![0], ResolutionPreset.medium);
-    cameraController!.initialize().then((value){
-      if(!mounted){
+    cameraController!.initialize().then((value) {
+      if (!mounted) {
         return;
-      }else{
+      } else {
         setState(() {
           cameraController!.startImageStream((imageStream) {
             cameraImage = imageStream;
@@ -40,10 +39,11 @@ class _HomeState extends State<Home> {
   }
 
   runModel() async {
-    if(cameraImage!=null){
-      var predictions = await Tflite.runModelOnFrame(bytesList:cameraImage!.planes.map((plane) {
-        return plane.bytes;
-      }).toList(),
+    if (cameraImage != null) {
+      var predictions = await Tflite.runModelOnFrame(
+          bytesList: cameraImage!.planes.map((plane) {
+            return plane.bytes;
+          }).toList(),
           imageHeight: cameraImage!.height,
           imageWidth: cameraImage!.width,
           imageMean: 126.5,
@@ -57,15 +57,13 @@ class _HomeState extends State<Home> {
           output = element['label'];
         });
       });
-
     }
-
   }
 
-  loadmodel()async{
-    await Tflite.loadModel(model: "Assests/Final_model.tflite",labels: "Assests/labels.txt");
+  loadmodel() async {
+    await Tflite.loadModel(
+        model: "Assests/Final_model.tflite", labels: "Assests/labels.txt");
   }
-
 
   @override
   Widget build(BuildContext context) {
@@ -94,7 +92,6 @@ class _HomeState extends State<Home> {
               child: Container(
                 height: MediaQuery.of(context).size.height * 0.7,
                 width: MediaQuery.of(context).size.width,
-
                 decoration: BoxDecoration(
                   color: Colors.black,
                   border: Border.all(
@@ -105,21 +102,21 @@ class _HomeState extends State<Home> {
                 ),
                 child: !cameraController!.value.isInitialized
                     ? Container(
-                  child: const Center(
-                    child: Text(
-                      'Camera not available',
-                      style: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white,
-                      ),
-                    ),
-                  ),
-                )
+                        child: const Center(
+                          child: Text(
+                            'Camera not available',
+                            style: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                      )
                     : AspectRatio(
-                  aspectRatio: cameraController!.value.aspectRatio,
-                  child: CameraPreview(cameraController!),
-                ),
+                        aspectRatio: cameraController!.value.aspectRatio,
+                        child: CameraPreview(cameraController!),
+                      ),
               ),
             ),
             Text(
@@ -135,5 +132,4 @@ class _HomeState extends State<Home> {
       ),
     );
   }
-
 }
