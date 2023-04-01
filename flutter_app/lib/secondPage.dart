@@ -61,7 +61,7 @@ class _SecondPageState extends State<SecondPage> {
                                         fixedSize: Size(275, 70),
                                         shape: RoundedRectangleBorder(
                                             borderRadius:
-                                                BorderRadius.circular(25))),
+                                                BorderRadius.circular(35))),
                                     onPressed: () {
                                       //method which navigate to standard monitoring page
                                       Navigator.push(
@@ -83,7 +83,7 @@ class _SecondPageState extends State<SecondPage> {
                                         fixedSize: Size(275, 70),
                                         shape: RoundedRectangleBorder(
                                             borderRadius:
-                                                BorderRadius.circular(25))),
+                                                BorderRadius.circular(35))),
                                     onPressed: () {
                                       //method which navigate to advanced monitoring page
                                       Navigator.push(
@@ -104,14 +104,14 @@ class _SecondPageState extends State<SecondPage> {
                                     style: TextStyle(
                                         color: Color.fromARGB(255, 0, 0, 0),
                                         fontSize: 17,
-                                        fontWeight: FontWeight.w500,
+                                        fontWeight: FontWeight.w400,
                                         fontStyle: FontStyle.italic),
                                     maxLines: 5,
                                     textAlign: TextAlign.center,
                                     overflow: TextOverflow.visible,
                                   ),
                                   SizedBox(height: 120),
-                                  Text(
+                                  /*Text(
                                     'By Pressing these buttons you are agreeing to our terms and conditions.',
                                     style: TextStyle(
                                         color: Color.fromARGB(255, 4, 4, 4),
@@ -120,20 +120,9 @@ class _SecondPageState extends State<SecondPage> {
                                     maxLines: 6,
                                     textAlign: TextAlign.center,
                                     overflow: TextOverflow.visible,
-                                  )
+                                  )*/
                                 ]),
                           ),
-                          //SizedBox(height: 140),
-                          /*Text(
-                            'By Pressing these buttons you are agreeing to our terms and conditions.',
-                            style: TextStyle(
-                                color: Color.fromARGB(255, 255, 252, 252),
-                                fontSize: 14,
-                                fontWeight: FontWeight.w400),
-                            maxLines: 6,
-                            textAlign: TextAlign.center,
-                            overflow: TextOverflow.visible,
-                          )*/
                         ]),
                   )
                 ],

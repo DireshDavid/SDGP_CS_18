@@ -82,6 +82,7 @@ class _StartupScreenState extends State<StartupScreen> {
                                     'Welcome to our driver drowsiness prevention tool. By using this tool, you can help ensure the safety of yourself and others on the road.',
                                     style: TextStyle(
                                         color: Color.fromARGB(255, 0, 0, 0),
+                                        height: 1.7,
                                         fontSize: 22,
                                         fontWeight: FontWeight.w400,
                                         fontStyle: FontStyle.italic),
@@ -89,16 +90,15 @@ class _StartupScreenState extends State<StartupScreen> {
                                     textAlign: TextAlign.center,
                                     overflow: TextOverflow.visible,
                                   ),
-                                  Padding(padding: EdgeInsets.all(40)),
+                                  Padding(padding: EdgeInsets.all(35)),
                                   //SizedBox(height: 70),
                                   ElevatedButton(
                                     style: ElevatedButton.styleFrom(
-                                        primary:
-                                            (Color.fromARGB(255, 31, 165, 0)),
-                                        fixedSize: Size(250, 80),
+                                        primary: (Colors.black),
+                                        fixedSize: Size(280, 80),
                                         shape: RoundedRectangleBorder(
                                             borderRadius:
-                                                BorderRadius.circular(25))),
+                                                BorderRadius.circular(35))),
                                     onPressed: () {
                                       //method which navigate to second page
                                       Navigator.push(
@@ -109,8 +109,8 @@ class _StartupScreenState extends State<StartupScreen> {
                                     },
                                     child: Text('GET STARTED', //button
                                         style: TextStyle(
-                                            color: Color.fromARGB(255, 0, 0, 0),
-                                            fontSize: 27,
+                                            color: Colors.white,
+                                            fontSize: 25,
                                             fontWeight: FontWeight.bold)),
                                   ),
                                 ]),
