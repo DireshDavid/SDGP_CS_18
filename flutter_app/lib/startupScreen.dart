@@ -49,7 +49,7 @@ class _StartupScreenState extends State<StartupScreen> {
                           Text('AWAKELY',
                               style: GoogleFonts.junge(
                                   fontSize: 45,
-                                  fontWeight: FontWeight.w800,
+                                  fontWeight: FontWeight.w900,
                                   color: Color.fromRGBO(0, 0, 0, 0.886))),
                           /*Image(
                             image: AssetImage('Assests/name.png'),
@@ -63,7 +63,7 @@ class _StartupScreenState extends State<StartupScreen> {
                             'SAFETY FOR ALL',
                             style: TextStyle(
                                 color: Color.fromARGB(255, 87, 71, 0),
-                                fontSize: 18,
+                                fontSize: 17,
                                 fontWeight: FontWeight.w500),
                           ),
                           SizedBox(height: 100),

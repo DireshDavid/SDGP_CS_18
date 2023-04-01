@@ -27,15 +27,15 @@ class _SecondPageState extends State<SecondPage> {
                             end: Alignment.bottomCenter,
                             //background colour
                             colors: [
-                          Color.fromARGB(248, 65, 170, 0),
-                          Color.fromARGB(250, 26, 120, 34),
-                          Color.fromARGB(252, 1, 71, 2),
+                          Color.fromARGB(248, 179, 244, 138),
+                          Color.fromARGB(248, 90, 182, 98),
+                          Color.fromARGB(249, 9, 81, 11),
                           Color.fromARGB(255, 0, 64, 13),
                         ])),
                     child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
-                          SizedBox(height: 40),
+                          SizedBox(height: 80),
                           Image(
                             //adding logo
                             image: AssetImage('Assests/logo.png'),
@@ -43,17 +43,18 @@ class _SecondPageState extends State<SecondPage> {
                             width: 105,
                             alignment: FractionalOffset.topCenter,
                           ),
-                          SizedBox(height: 100),
+                          SizedBox(height: 165),
                           Container(
                             height: 500,
-                            width: 350,
+                            width: double.infinity,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(30),
-                              color: Color.fromARGB(255, 248, 244, 225),
+                              color: Color.fromARGB(255, 245, 244, 235),
                             ),
                             child: Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: <Widget>[
+                                  SizedBox(height: 70),
                                   ElevatedButton(
                                     style: ElevatedButton.styleFrom(
                                         primary: (Colors.black),
@@ -72,10 +73,10 @@ class _SecondPageState extends State<SecondPage> {
                                     child: Text('STANDARD MONITORING',
                                         style: TextStyle(
                                             color: Colors.white,
-                                            fontSize: 17,
+                                            fontSize: 18,
                                             fontWeight: FontWeight.bold)),
                                   ),
-                                  SizedBox(height: 50),
+                                  SizedBox(height: 60),
                                   ElevatedButton(
                                     style: ElevatedButton.styleFrom(
                                         primary: (Colors.black),
@@ -94,7 +95,7 @@ class _SecondPageState extends State<SecondPage> {
                                     child: Text('ADVANCED MONITORING',
                                         style: TextStyle(
                                             color: Colors.white,
-                                            fontSize: 17,
+                                            fontSize: 18,
                                             fontWeight: FontWeight.bold)),
                                   ),
                                   SizedBox(height: 30),
@@ -103,16 +104,27 @@ class _SecondPageState extends State<SecondPage> {
                                     style: TextStyle(
                                         color: Color.fromARGB(255, 0, 0, 0),
                                         fontSize: 17,
-                                        //fontWeight: FontWeight.bold,
+                                        fontWeight: FontWeight.w500,
                                         fontStyle: FontStyle.italic),
                                     maxLines: 5,
                                     textAlign: TextAlign.center,
                                     overflow: TextOverflow.visible,
                                   ),
+                                  SizedBox(height: 120),
+                                  Text(
+                                    'By Pressing these buttons you are agreeing to our terms and conditions.',
+                                    style: TextStyle(
+                                        color: Color.fromARGB(255, 4, 4, 4),
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.w400),
+                                    maxLines: 6,
+                                    textAlign: TextAlign.center,
+                                    overflow: TextOverflow.visible,
+                                  )
                                 ]),
                           ),
-                          SizedBox(height: 140),
-                          Text(
+                          //SizedBox(height: 140),
+                          /*Text(
                             'By Pressing these buttons you are agreeing to our terms and conditions.',
                             style: TextStyle(
                                 color: Color.fromARGB(255, 255, 252, 252),
@@ -121,7 +133,7 @@ class _SecondPageState extends State<SecondPage> {
                             maxLines: 6,
                             textAlign: TextAlign.center,
                             overflow: TextOverflow.visible,
-                          )
+                          )*/
                         ]),
                   )
                 ],
