@@ -78,7 +78,6 @@ class _AdvancedMonitoringState extends State<AdvancedMonitoring> {
                   ),
                   SizedBox(height: 50),
                   Column(
-                    //mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Padding(
                         padding: const EdgeInsets.all(15.0),
