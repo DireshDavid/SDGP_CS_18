@@ -70,6 +70,18 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.green,
+        leading: BackButton(
+          onPressed: () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => AdvancedMonitoring())
+            );
+            _stopTimer();
+          },
+        ),
+      ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -119,4 +131,3 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
-
