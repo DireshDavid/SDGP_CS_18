@@ -25,7 +25,7 @@ class _SecondPageState extends State<SecondPage> {
                         gradient: LinearGradient(
                             begin: Alignment.topCenter,
                             end: Alignment.bottomCenter,
-                            //background colour
+                            //Background gradient colour
                             colors: [
                           Color.fromARGB(248, 179, 244, 138),
                           Color.fromARGB(248, 90, 182, 98),
@@ -37,7 +37,7 @@ class _SecondPageState extends State<SecondPage> {
                         children: <Widget>[
                           SizedBox(height: 80),
                           Image(
-                            //adding logo
+                            //Adding logo to the page
                             image: AssetImage('Assests/logo.png'),
                             height: 105,
                             width: 105,
@@ -56,6 +56,7 @@ class _SecondPageState extends State<SecondPage> {
                                 children: <Widget>[
                                   SizedBox(height: 70),
                                   ElevatedButton(
+                                    //Button for standard monitoring
                                     style: ElevatedButton.styleFrom(
                                         primary: (Colors.black),
                                         fixedSize: Size(275, 70),
@@ -78,6 +79,7 @@ class _SecondPageState extends State<SecondPage> {
                                   ),
                                   SizedBox(height: 80),
                                   ElevatedButton(
+                                    //Button for advanced monitoring
                                     style: ElevatedButton.styleFrom(
                                         primary: (Colors.black),
                                         fixedSize: Size(275, 70),
@@ -106,7 +108,7 @@ class _SecondPageState extends State<SecondPage> {
                                         fontSize: 17,
                                         fontWeight: FontWeight.w400,
                                         fontStyle: FontStyle.italic),
-                                    maxLines: 5,
+                                    maxLines: 6,
                                     textAlign: TextAlign.center,
                                     overflow: TextOverflow.visible,
                                   ),
