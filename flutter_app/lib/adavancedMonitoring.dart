@@ -17,6 +17,18 @@ class _AdvancedMonitoringState extends State<AdvancedMonitoring> {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         home: Scaffold(
+            appBar: AppBar(
+              backgroundColor: Colors.green, // your custom color
+              leading: IconButton(
+              icon: Icon(Icons.arrow_back),
+              onPressed: () {
+               Navigator.push(
+                 context,
+                 MaterialPageRoute(builder: (context) => SecondPage()),
+              );
+            },
+          ),
+        ),
             body: SingleChildScrollView(
                 child: Column(children: [
           Container(
