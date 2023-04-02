@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:Drowsy/secondpage.dart';
-import 'adavancedMonitoring.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class StartupScreen extends StatefulWidget {
@@ -22,7 +21,7 @@ class _StartupScreenState extends State<StartupScreen> {
                     height: double.infinity,
                     width: double.infinity,
                     decoration: BoxDecoration(
-                        //color: Color.fromARGB(255, 0, 33, 95),
+
                         //background colour
                         gradient: LinearGradient(
                             begin: Alignment.topCenter,
@@ -51,18 +50,12 @@ class _StartupScreenState extends State<StartupScreen> {
                                   fontSize: 45,
                                   fontWeight: FontWeight.w900,
                                   color: Color.fromRGBO(0, 0, 0, 0.886))),
-                          /*Image(
-                            image: AssetImage('Assests/name.png'),
-                            height: 200,
-                            width: 200,
-                            alignment: FractionalOffset.topCenter,
-                          ),*/
 
                           SizedBox(height: 20),
                           Text(
                             'SAFETY FOR ALL',
                             style: TextStyle(
-                                color: Color.fromARGB(255, 87, 71, 0),
+                                color: Color.fromARGB(255, 94, 78, 8),
                                 fontSize: 17,
                                 fontWeight: FontWeight.w500),
                           ),
@@ -86,7 +79,7 @@ class _StartupScreenState extends State<StartupScreen> {
                                         fontSize: 22,
                                         fontWeight: FontWeight.w400,
                                         fontStyle: FontStyle.italic),
-                                    maxLines: 7,
+                                    maxLines: 6,
                                     textAlign: TextAlign.center,
                                     overflow: TextOverflow.visible,
                                   ),
