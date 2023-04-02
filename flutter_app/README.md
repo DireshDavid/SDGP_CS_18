@@ -25,6 +25,11 @@ change the alarm sound simply add the mp3 you desire inside the directory and de
 "Alarm_sound.mp3" and change the name of the file in line 51 in the TimerFinal.dart file to the name
 of the file you newly added.
 
+The "_counter" variable within the TimerFinal.dart file has been set to 10. This represent 10 seconds. This is
+for demonstrative purposes only, if you would like to adjust the time period simply change the variable (In lines 36,41, and  63) to the required
+amount of time in seconds you wish to enter.
+
+**************************************************************************************************************************************************
 An important thing to keep in mind is when running the main dart file within the "flutter_app" directory
 the following error message may appear:
 
@@ -35,3 +40,5 @@ Otherwise, consider removing it since a future release of Flutter will remove th
 However, do not worry as it is merely a cautionary step by the Flutter application framework and the
 necessary changes to dependencies and AndroidManifest.xml files have been made. The application can 
 still run even though the above error message is shown.
+
+**************************************************************************************************************************************************
