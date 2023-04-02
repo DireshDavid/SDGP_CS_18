@@ -8,7 +8,7 @@ The following technologies were used in the creation of the application:
   
 The main application is held in the sub-dirctory titled "flutter_app."
 
-In order to view the source cod of the application flutter is required. 
+In order to view the source code of the application flutter is required. 
 
 An important thing to keep in mind is when running the main dart file within the "flutter_app" directory the following error message may appear:
 "The plugin `tflite` uses a deprecated version of the Android embedding.
