@@ -25,7 +25,7 @@ class _SecondPageState extends State<SecondPage> {
                         gradient: LinearGradient(
                             begin: Alignment.topCenter,
                             end: Alignment.bottomCenter,
-                            //Background gradient colour
+                            //Add Background gradient colour
                             colors: [
                           Color.fromARGB(248, 179, 244, 138),
                           Color.fromARGB(248, 90, 182, 98),
@@ -56,7 +56,7 @@ class _SecondPageState extends State<SecondPage> {
                                 children: <Widget>[
                                   SizedBox(height: 70),
                                   ElevatedButton(
-                                    //Button for standard monitoring
+                                    //Add Button to navigate standard monitoring
                                     style: ElevatedButton.styleFrom(
                                         primary: (Colors.black),
                                         fixedSize: Size(275, 70),
@@ -108,7 +108,7 @@ class _SecondPageState extends State<SecondPage> {
                                         fontSize: 17,
                                         fontWeight: FontWeight.w400,
                                         fontStyle: FontStyle.italic),
-                                    maxLines: 6,
+                                    maxLines: 7,
                                     textAlign: TextAlign.center,
                                     overflow: TextOverflow.visible,
                                   ),
