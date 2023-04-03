@@ -4,6 +4,7 @@ import 'dart:async';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:Drowsy/TimerFinal.dart';
 import 'camera_page.dart';
+import 'package:Drowsy/secondPage.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class AdvancedMonitoring extends StatefulWidget {
