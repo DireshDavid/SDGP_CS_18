@@ -69,7 +69,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Object Detection'),
+        title: Text('Awakely Detector'),
         backgroundColor: Colors.blueGrey[900],
       ),
       body: Container(

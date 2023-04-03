@@ -72,7 +72,7 @@ class _StartupScreenState extends State<StartupScreen> {
                                 children: <Widget>[
                                   //introduction about app
                                   Text(
-                                    'Welcome to our driver drowsiness prevention tool. By using this tool, you can help ensure the safety of yourself and others on the road.',
+                                    'Welcome to Awakely! We are excited to offer you a tool that prioritizes your safety on the road. Thank you for choosing our app, and remember, drive safely, take breaks when needed, and stay alert on the road.',
                                     style: TextStyle(
                                         color: Color.fromARGB(255, 0, 0, 0),
                                         height: 1.7,

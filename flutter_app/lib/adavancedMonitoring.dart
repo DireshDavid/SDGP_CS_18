@@ -61,7 +61,7 @@ class _AdvancedMonitoringState extends State<AdvancedMonitoring> {
                     alignment: FractionalOffset.topCenter,
                   ),
                   SizedBox(height: 70),
-                  Text('ADAVANCED MONITORING',
+                  Text('AWAKELY ALARM',
                       style: GoogleFonts.arvo(
                           fontSize: 25,
                           fontWeight: FontWeight.w700,
@@ -111,7 +111,7 @@ class _AdvancedMonitoringState extends State<AdvancedMonitoring> {
                                           builder: (context) => Home()));
                                   main(); // Timer file main method called
                                 },
-                                child: Text('Turn on camera',
+                                child: Text('Turn on alarm',
                                     style: TextStyle(
                                         color: Colors.white,
                                         fontSize: 25,

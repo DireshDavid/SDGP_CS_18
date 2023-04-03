@@ -71,7 +71,7 @@ class _SecondPageState extends State<SecondPage> {
                                               builder: (context) =>
                                                   const Home()));
                                     },
-                                    child: Text('STANDARD MONITORING',
+                                    child: Text('AWAKELY DETECTOR',
                                         style: TextStyle(
                                             color: Colors.white,
                                             fontSize: 18,
@@ -94,7 +94,7 @@ class _SecondPageState extends State<SecondPage> {
                                               builder: (context) =>
                                                   AdvancedMonitoring()));
                                     },
-                                    child: Text('ADVANCED MONITORING',
+                                    child: Text('AWAKELY ALARM',
                                         style: TextStyle(
                                             color: Colors.white,
                                             fontSize: 18,
