@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:Drowsy/adavancedMonitoring.dart';
+import 'package:Drowsy/adavanced_monitoring.dart';
 import 'package:Drowsy/camera_page.dart';
 
 class SecondPage extends StatefulWidget {
