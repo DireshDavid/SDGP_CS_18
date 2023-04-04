@@ -106,8 +106,10 @@ class _MyHomePageState extends State<MyHomePage> {
               onPressed: () => _startTimer(),
               style: ElevatedButton.styleFrom(
                   primary: Colors.green,
-                  shape: CircleBorder(),
-                  fixedSize: Size(110, 110)
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(50),
+                  ),
+                  fixedSize: Size(345, 55)
               ),
               child: Text(_counter > 0 ? "Start Timer" : "I'm awake"),
             ),
@@ -120,8 +122,10 @@ class _MyHomePageState extends State<MyHomePage> {
                   onPressed: _stopTimer,
                   style: ElevatedButton.styleFrom(
                       primary: Colors.red,
-                      shape: CircleBorder(),
-                      fixedSize: Size(110, 110)
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(50),
+                      ),
+                      fixedSize: Size(350, 60)
                   ),
                   child: Text("End"),
                 ),
