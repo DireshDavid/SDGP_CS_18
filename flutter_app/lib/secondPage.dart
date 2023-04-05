@@ -55,7 +55,8 @@ class _SecondPageState extends State<SecondPage> {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: <Widget>[
                                   const SizedBox(height: 70),
-                                  ElevatedButton( //Adding Button to the Awakely Detector
+                                  ElevatedButton(
+                                    //Adding Button to the Awakely Detector
                                     style: ElevatedButton.styleFrom(
                                         backgroundColor: (Colors.black),
                                         fixedSize: const Size(275, 70),
@@ -73,11 +74,12 @@ class _SecondPageState extends State<SecondPage> {
                                     child: const Text('AWAKELY DETECTOR',
                                         style: TextStyle(
                                             color: Colors.white,
-                                            fontSize: 18,
+                                            fontSize: 20,
                                             fontWeight: FontWeight.bold)),
                                   ),
                                   const SizedBox(height: 80),
-                                  ElevatedButton( //Adding Button to the Awakely Alarm
+                                  ElevatedButton(
+                                    //Adding Button to the Awakely Alarm
                                     style: ElevatedButton.styleFrom(
                                         backgroundColor: (Colors.black),
                                         fixedSize: const Size(275, 70),
@@ -95,7 +97,7 @@ class _SecondPageState extends State<SecondPage> {
                                     child: const Text('AWAKELY ALARM',
                                         style: TextStyle(
                                             color: Colors.white,
-                                            fontSize: 18,
+                                            fontSize: 20,
                                             fontWeight: FontWeight.bold)),
                                   ),
                                   const SizedBox(height: 30),
@@ -111,17 +113,12 @@ class _SecondPageState extends State<SecondPage> {
                                     overflow: TextOverflow.visible,
                                   ),
                                   const SizedBox(height: 120),
-
-                                ]
-                            ),
+                                ]),
                           ),
-                        ]
-                    ),
+                        ]),
                   )
                 ],
               ),
-            )
-        )
-    );
+            )));
   }
 }
