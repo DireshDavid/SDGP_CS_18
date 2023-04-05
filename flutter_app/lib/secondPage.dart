@@ -21,7 +21,7 @@ class _SecondPageState extends State<SecondPage> {
                   Container(
                     height: double.infinity,
                     width: double.infinity,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                         gradient: LinearGradient(
                             begin: Alignment.topCenter,
                             end: Alignment.bottomCenter,
@@ -35,73 +35,71 @@ class _SecondPageState extends State<SecondPage> {
                     child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
-                          SizedBox(height: 80),
-                          Image(
+                          const SizedBox(height: 80),
+                          const Image(
                             //Adding logo to the page
                             image: AssetImage('Assests/logo.png'),
                             height: 105,
                             width: 105,
                             alignment: FractionalOffset.topCenter,
                           ),
-                          SizedBox(height: 165),
+                          const SizedBox(height: 165),
                           Container(
                             height: 500,
                             width: double.infinity,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(30),
-                              color: Color.fromARGB(255, 245, 244, 235),
+                              color: const Color.fromARGB(255, 245, 244, 235),
                             ),
                             child: Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: <Widget>[
-                                  SizedBox(height: 70),
-                                  ElevatedButton(
-                                    //Add Button to navigate standard monitoring
+                                  const SizedBox(height: 70),
+                                  ElevatedButton( //Adding Button to the Awakely Detector
                                     style: ElevatedButton.styleFrom(
-                                        primary: (Colors.black),
-                                        fixedSize: Size(275, 70),
+                                        backgroundColor: (Colors.black),
+                                        fixedSize: const Size(275, 70),
                                         shape: RoundedRectangleBorder(
                                             borderRadius:
                                                 BorderRadius.circular(35))),
                                     onPressed: () {
-                                      //method which navigate to standard monitoring page
+                                      //Method which navigate to the camera page
                                       Navigator.push(
                                           context,
                                           CupertinoPageRoute(
                                               builder: (context) =>
                                                   const Home()));
                                     },
-                                    child: Text('AWAKELY DETECTOR',
+                                    child: const Text('AWAKELY DETECTOR',
                                         style: TextStyle(
                                             color: Colors.white,
                                             fontSize: 18,
                                             fontWeight: FontWeight.bold)),
                                   ),
-                                  SizedBox(height: 80),
-                                  ElevatedButton(
-                                    //Button for advanced monitoring
+                                  const SizedBox(height: 80),
+                                  ElevatedButton( //Adding Button to the Awakely Alarm
                                     style: ElevatedButton.styleFrom(
-                                        primary: (Colors.black),
-                                        fixedSize: Size(275, 70),
+                                        backgroundColor: (Colors.black),
+                                        fixedSize: const Size(275, 70),
                                         shape: RoundedRectangleBorder(
                                             borderRadius:
                                                 BorderRadius.circular(35))),
                                     onPressed: () {
-                                      //method which navigate to advanced monitoring page
+                                      //Method which navigate to the advanced monitoring page
                                       Navigator.push(
                                           context,
                                           MaterialPageRoute(
                                               builder: (context) =>
-                                                  AdvancedMonitoring()));
+                                                  const AdvancedMonitoring()));
                                     },
-                                    child: Text('AWAKELY ALARM',
+                                    child: const Text('AWAKELY ALARM',
                                         style: TextStyle(
                                             color: Colors.white,
                                             fontSize: 18,
                                             fontWeight: FontWeight.bold)),
                                   ),
-                                  SizedBox(height: 30),
-                                  Text(
+                                  const SizedBox(height: 30),
+                                  const Text(
                                     'Choose if you are wearing sunglasses',
                                     style: TextStyle(
                                         color: Color.fromARGB(255, 0, 0, 0),
@@ -112,23 +110,18 @@ class _SecondPageState extends State<SecondPage> {
                                     textAlign: TextAlign.center,
                                     overflow: TextOverflow.visible,
                                   ),
-                                  SizedBox(height: 120),
-                                  /*Text(
-                                    'By Pressing these buttons you are agreeing to our terms and conditions.',
-                                    style: TextStyle(
-                                        color: Color.fromARGB(255, 4, 4, 4),
-                                        fontSize: 14,
-                                        fontWeight: FontWeight.w400),
-                                    maxLines: 6,
-                                    textAlign: TextAlign.center,
-                                    overflow: TextOverflow.visible,
-                                  )*/
-                                ]),
+                                  const SizedBox(height: 120),
+
+                                ]
+                            ),
                           ),
-                        ]),
+                        ]
+                    ),
                   )
                 ],
               ),
-            )));
+            )
+        )
+    );
   }
 }
