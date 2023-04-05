@@ -44,7 +44,7 @@ class _StartupScreenState extends State<StartupScreen> {
                             alignment: FractionalOffset.topCenter,
                           ),
                           const SizedBox(height: 60),
-                          //Name
+
                           Text('AWAKELY', //Adding App name to the page
                               style: GoogleFonts.junge(
                                   fontSize: 45,
@@ -70,7 +70,7 @@ class _StartupScreenState extends State<StartupScreen> {
                             child: Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: <Widget>[
-                                  //introduction about app
+                                  //Introduction about app
                                   const Text(
                                     'Welcome to Awakely ! We are excited to offer you a tool that prioritizes your safety on the road. Thank you for choosing our app, and remember, drive safely, take breaks when needed, and stay alert on the road.',
                                     style: TextStyle(
@@ -84,7 +84,7 @@ class _StartupScreenState extends State<StartupScreen> {
                                     overflow: TextOverflow.visible,
                                   ),
                                   const Padding(padding: EdgeInsets.all(35)),
-                                  //SizedBox(height: 70),
+
                                   ElevatedButton(
                                     style: ElevatedButton.styleFrom(
                                         primary: (Colors.black),
@@ -109,7 +109,6 @@ class _StartupScreenState extends State<StartupScreen> {
                                   ),
                                 ]),
                           ),
-                          //SizedBox(height: 10),
                         ]),
                   )
                 ],
