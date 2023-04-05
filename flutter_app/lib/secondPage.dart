@@ -63,7 +63,7 @@ class _SecondPageState extends State<SecondPage> {
                                             borderRadius:
                                                 BorderRadius.circular(35))),
                                     onPressed: () {
-                                      //Method which navigate to the camera page
+                                      //Method which navigate to camera page
                                       Navigator.push(
                                           context,
                                           CupertinoPageRoute(
