@@ -64,7 +64,7 @@ class _AdvancedMonitoringState extends State<AdvancedMonitoring> {
                 children: <Widget>[
                   const SizedBox(height: 50),
                   const Text(
-                    "Advanced monitoring further helps you to stay alert and attentive at the wheel. When you click the button below you will be redirected to the next screen in which you will be asked to click another button to start a timer. When you are ready click the button and the timer will begin. When the timer expires, you will be asked to click a button to check whether you are awake, an alarm sound shall also start ringing (just in case you are not awake). Simply press the \"I'm awake\" button and the timer will restart and continue the process.",
+                    "Advanced monitoring further helps you to stay alert and attentive at the wheel. When you click the button below you will be redirected to the next screen in which you will be asked to click another button to start a timer.",
                     style: TextStyle(
                         height: 1.7,
                         color: Color.fromARGB(255, 0, 0, 0),
