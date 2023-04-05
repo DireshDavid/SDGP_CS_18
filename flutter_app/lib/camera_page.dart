@@ -1,4 +1,5 @@
 import 'package:camera/camera.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:tflite/tflite.dart';
 import 'main.dart';
@@ -76,10 +77,10 @@ class _HomeState extends State<Home> {
         decoration: const BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Color.fromARGB(255, 79, 136, 251),
-              Color.fromARGB(250, 0, 87, 186),
-              Color.fromARGB(251, 1, 65, 168),
-              Color.fromARGB(255, 0, 38, 77),
+              Color.fromARGB(248, 176, 253, 127),
+              Color.fromARGB(248, 102, 190, 109),
+              Color.fromARGB(250, 61, 177, 63),
+              Color.fromARGB(255, 0, 64, 13),
             ],
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
@@ -108,7 +109,7 @@ class _HomeState extends State<Home> {
                             style: TextStyle(
                               fontSize: 20,
                               fontWeight: FontWeight.bold,
-                              color: Colors.white,
+                              color: CupertinoColors.white,
                             ),
                           ),
                         ),
@@ -124,9 +125,10 @@ class _HomeState extends State<Home> {
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 20,
-                color: Colors.grey[800],
+                color: output == 'Closed' ? Colors.red : Colors.white,
               ),
             ),
+
           ],
         ),
       ),
