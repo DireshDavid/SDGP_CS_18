@@ -1,7 +1,10 @@
+import 'dart:async';
+
 import 'package:camera/camera.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:tflite/tflite.dart';
+import 'package:audioplayers/audioplayers.dart';
 import 'main.dart';
 
 class Home extends StatefulWidget {
@@ -15,6 +18,8 @@ class _HomeState extends State<Home> {
   CameraImage? cameraImage;
   CameraController? cameraController;
   String output = '';
+  Timer? timer;
+
 
   @override
   void initState() {
@@ -53,11 +58,27 @@ class _HomeState extends State<Home> {
           numResults: 2,
           threshold: 0.1,
           asynch: true);
+      bool isClosed = false;
+      final player = AudioPlayer();
       predictions!.forEach((element) {
-        setState(() {
-          output = element['label'];
-        });
+        if (element['label'] == 'Closed') {
+          isClosed = true;
+        }
       });
+      setState(() {
+        output = isClosed ? 'Closed' : 'Open';
+      });
+      if (output == 'Closed') {
+        if (timer == null || !timer!.isActive) {
+          timer = Timer(Duration(seconds: 10), () {
+            player.play(AssetSource("Alarm_sound.mp3"));
+          });
+        }
+      } else {
+        if (timer != null && timer!.isActive) {
+          timer!.cancel();
+        }
+      }
     }
   }
 

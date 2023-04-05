@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:Drowsy/TimerFinal.dart';
-import 'camera_page.dart';
-import 'package:Drowsy/secondPage.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class AdvancedMonitoring extends StatefulWidget {
@@ -17,25 +15,13 @@ class _AdvancedMonitoringState extends State<AdvancedMonitoring> {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         home: Scaffold(
-            appBar: AppBar(
-              backgroundColor: Colors.green, // your custom color
-              leading: IconButton(
-              icon: const Icon(Icons.arrow_back),
-              onPressed: () {
-               Navigator.push(
-                 context,
-                 MaterialPageRoute(builder: (context) => SecondPage()),
-              );
-            },
-          ),
-        ),
             body: SingleChildScrollView(
                 child: Column(children: [
           Container(
               alignment: Alignment.center,
               padding: const EdgeInsets.only(top: 50),
               width: double.infinity,
-              height: 350,
+              height: 300,
               decoration: const BoxDecoration(
                 borderRadius: BorderRadius.only(
                   bottomLeft: Radius.circular(30),
@@ -55,40 +41,41 @@ class _AdvancedMonitoringState extends State<AdvancedMonitoring> {
                   //adding logo
                   const Image(
                     image: AssetImage('Assests/logo.png'),
-                    height: 105,
-                    width: 105,
+                    height: 90,
+                    width: 90,
                     alignment: FractionalOffset.topCenter,
                   ),
-                  const SizedBox(height: 70),
+                  const SizedBox(height: 60),
                   Text('AWAKELY ALARM',
                       style: GoogleFonts.arvo(
-                          fontSize: 25,
+                          fontSize: 28,
                           fontWeight: FontWeight.w700,
                           color: const Color.fromRGBO(0, 0, 0, 0.886))),
-                  const SizedBox(height: 70),
+                  const SizedBox(height: 60),
                 ],
               )),
           Container(
+            width: double.infinity,
             decoration: const BoxDecoration(
-              color: Color.fromARGB(255, 245, 244, 235),
+              color: Color.fromARGB(255, 248, 246, 239),
             ),
             child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  const SizedBox(height: 60),
+                  const SizedBox(height: 50),
                   const Text(
-                    "Advanced monitoring further helps you to stay alert and attentive at the wheel. When you click the button below you will be redirected to the next screen in which you will be asked to click another button to start a timer. When you are ready click the button and the timer will begin. When the timer expires, you will be asked to click a button to check whether you are awake, an alarm sound shall also start ringing (just in case you are not awake). Simply press the \"I'm awake\" button and the timer will restart and continue the process.",
+                    "Advanced monitoring further helps you to stay alert and attentive at the wheel. When you click the button below you will be redirected to the next screen in which you will be asked to click another button to start a timer.",
                     style: TextStyle(
-                        height: 1.5,
+                        height: 1.7,
                         color: Color.fromARGB(255, 0, 0, 0),
-                        fontSize: 20,
+                        fontSize: 17,
                         fontWeight: FontWeight.w400,
                         fontStyle: FontStyle.italic),
-                    maxLines: 7,
+                    maxLines: 15,
                     textAlign: TextAlign.center,
                     overflow: TextOverflow.visible,
                   ),
-                  const SizedBox(height: 50),
+                  const SizedBox(height: 40),
                   Column(
                     children: [
                       Padding(
@@ -108,12 +95,12 @@ class _AdvancedMonitoringState extends State<AdvancedMonitoring> {
                                       context,
                                       MaterialPageRoute(
                                           builder: (context) => const MyApp()));
-                                   // Timer file main method called
+                                  // Timer file main method called
                                 },
                                 child: const Text('Turn on alarm',
                                     style: TextStyle(
                                         color: Colors.white,
-                                        fontSize: 25,
+                                        fontSize: 26,
                                         fontWeight: FontWeight.bold)),
                               ),
                             ),
