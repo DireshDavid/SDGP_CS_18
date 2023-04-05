@@ -107,8 +107,8 @@ class _AdvancedMonitoringState extends State<AdvancedMonitoring> {
                                   Navigator.push(
                                       context,
                                       MaterialPageRoute(
-                                          builder: (context) => const Home()));
-                                  main(); // Timer file main method called
+                                          builder: (context) => const MyApp()));
+                                   // Timer file main method called
                                 },
                                 child: const Text('Turn on alarm',
                                     style: TextStyle(
